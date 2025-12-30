@@ -2,6 +2,20 @@
 
 Port of classic Doom to Rust.
 
+## Manual step required for audio (submodule)
+
+To build with the Rust audio backend, you must manually edit the following file:
+
+	native/doomgeneric/doomgeneric/i_sound.c
+
+Change the preprocessor line to:
+
+	#if defined(FEATURE_SOUND) && !defined(__DJGPP__) && !defined(DG_SOUND_RUST)
+
+Make sure the `DG_SOUND_RUST` flag is defined to avoid audio implementation conflicts.
+
+**This change will NOT be committed to this repository, as the file is part of a submodule. If you want this to be permanent, please open a PR in the original project.**
+
 ## Features
 - Graphics in Win32 window (GDI)
 - Sound effects support (rodio)
