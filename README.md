@@ -32,6 +32,9 @@ Make sure the `DG_SOUND_RUST` flag is defined to avoid audio implementation conf
 - 1–7: weapon selection
 - WASD: modern alternative
 
+## Demo
+https://github.com/user-attachments/assets/784c623a-aff1-42ff-a46a-426b1cd59bd2
+
 ## Build
 Requirements:
 - Rust (edition 2021+)
