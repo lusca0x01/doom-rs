@@ -1,0 +1,3 @@
+[submodule "native/doomgeneric"]
+	path = native/doomgeneric
+	url = https://github.com/ozkl/doomgeneric
